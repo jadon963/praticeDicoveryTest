@@ -12,7 +12,7 @@
         "steps": [
           {
             "result": {
-              "duration": 12329794153,
+              "duration": 14511288171,
               "status": "passed"
             },
             "line": 3,
@@ -24,7 +24,7 @@
           },
           {
             "result": {
-              "duration": 70721433,
+              "duration": 108459039,
               "status": "passed"
             },
             "line": 4,
@@ -36,7 +36,7 @@
           },
           {
             "result": {
-              "duration": 938237934,
+              "duration": 865321714,
               "status": "passed"
             },
             "line": 5,
@@ -62,7 +62,7 @@
           },
           {
             "result": {
-              "duration": 4469097583,
+              "duration": 4245855785,
               "status": "passed"
             },
             "line": 6,
@@ -79,6 +79,6 @@
     "description": "",
     "id": "add-videos-from-homepage",
     "keyword": "Feature",
-    "uri": "HomePage.feature"
+    "uri": "/home/neeraj93/tut/DiscoveryTestBasic/src/test/java/Feature/HomePage.feature"
   }
 ]

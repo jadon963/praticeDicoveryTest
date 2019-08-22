@@ -1,4 +1,4 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("HomePage.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("/home/neeraj93/tut/DiscoveryTestBasic/src/test/java/Feature/HomePage.feature");
 formatter.feature({
   "line": 1,
   "name": "Add videos from HomePage",
@@ -95,14 +95,14 @@ formatter.match({
   "location": "HomePageStepDef.user_is_already_on_homePage()"
 });
 formatter.result({
-  "duration": 12329794153,
+  "duration": 14511288171,
   "status": "passed"
 });
 formatter.match({
   "location": "HomePageStepDef.user_scroll_down_upto_recommended_section()"
 });
 formatter.result({
-  "duration": 70721433,
+  "duration": 108459039,
   "status": "passed"
 });
 formatter.match({
@@ -119,14 +119,14 @@ formatter.match({
   "location": "HomePageStepDef.user_add_and_from_recommended(int,int)"
 });
 formatter.result({
-  "duration": 938237934,
+  "duration": 865321714,
   "status": "passed"
 });
 formatter.match({
   "location": "HomePageStepDef.verify_favorites_to_myvideos()"
 });
 formatter.result({
-  "duration": 4469097583,
+  "duration": 4245855785,
   "status": "passed"
 });
 });
