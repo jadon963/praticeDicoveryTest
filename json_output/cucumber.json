@@ -3,16 +3,38 @@
     "line": 1,
     "elements": [
       {
-        "line": 10,
+        "before": [
+          {
+            "result": {
+              "duration": 14824103200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenario()"
+            }
+          }
+        ],
+        "line": 2,
         "name": "Add videos from Recommended",
         "description": "",
-        "id": "add-videos-from-homepage;add-videos-from-recommended;;2",
+        "id": "add-videos-from-homepage;add-videos-from-recommended",
+        "after": [
+          {
+            "result": {
+              "duration": 211384054,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.afterScenario()"
+            }
+          }
+        ],
         "type": "scenario",
-        "keyword": "Scenario Outline",
+        "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 14511288171,
+              "duration": 153930960,
               "status": "passed"
             },
             "line": 3,
@@ -24,7 +46,7 @@
           },
           {
             "result": {
-              "duration": 108459039,
+              "duration": 100426663,
               "status": "passed"
             },
             "line": 4,
@@ -36,39 +58,37 @@
           },
           {
             "result": {
-              "duration": 865321714,
+              "duration": 1105456012,
               "status": "passed"
             },
             "line": 5,
-            "name": "user add 0 and 1 from recommended",
+            "name": "user addVideos from recommended",
             "match": {
-              "arguments": [
-                {
-                  "val": "0",
-                  "offset": 9
-                },
-                {
-                  "val": "1",
-                  "offset": 15
-                }
-              ],
-              "location": "HomePageStepDef.user_add_and_from_recommended(int,int)"
+              "location": "HomePageStepDef.user_add_and_from_recommended()"
             },
-            "matchedColumns": [
-              0,
-              1
-            ],
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 4245855785,
+              "duration": 4432125328,
               "status": "passed"
             },
             "line": 6,
-            "name": "Verify favorites to My videos",
+            "name": "Navigate to MyVideos page",
             "match": {
-              "location": "HomePageStepDef.verify_favorites_to_myvideos()"
+              "location": "HomePageStepDef.Navigate_to_MyVideos_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 144848600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Verify favorites added to My videos",
+            "match": {
+              "location": "HomePageStepDef.Verify_favorites_added_to_My_video()"
             },
             "keyword": "Then "
           }
@@ -79,6 +99,6 @@
     "description": "",
     "id": "add-videos-from-homepage",
     "keyword": "Feature",
-    "uri": "/home/neeraj93/tut/DiscoveryTestBasic/src/test/java/Feature/HomePage.feature"
+    "uri": "src/main/resources/HomePage.feature"
   }
 ]

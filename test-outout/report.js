@@ -1,4 +1,4 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("/home/neeraj93/tut/DiscoveryTestBasic/src/test/java/Feature/HomePage.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/main/resources/HomePage.feature");
 formatter.feature({
   "line": 1,
   "name": "Add videos from HomePage",
@@ -6,66 +6,17 @@ formatter.feature({
   "id": "add-videos-from-homepage",
   "keyword": "Feature"
 });
-formatter.scenarioOutline({
+formatter.before({
+  "duration": 14824103200,
+  "status": "passed"
+});
+formatter.scenario({
   "line": 2,
   "name": "Add videos from Recommended",
   "description": "",
   "id": "add-videos-from-homepage;add-videos-from-recommended",
-  "type": "scenario_outline",
-  "keyword": "Scenario Outline"
-});
-formatter.step({
-  "line": 3,
-  "name": "User is already on homePage",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 4,
-  "name": "user scroll down upto recommended section",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 5,
-  "name": "user add \u003cfirstVideo\u003e and \u003csecondVideo\u003e from recommended",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 6,
-  "name": "Verify favorites to My videos",
-  "keyword": "Then "
-});
-formatter.examples({
-  "line": 8,
-  "name": "",
-  "description": "",
-  "id": "add-videos-from-homepage;add-videos-from-recommended;",
-  "rows": [
-    {
-      "cells": [
-        "firstVideo",
-        "secondVideo"
-      ],
-      "line": 9,
-      "id": "add-videos-from-homepage;add-videos-from-recommended;;1"
-    },
-    {
-      "cells": [
-        "0",
-        "1"
-      ],
-      "line": 10,
-      "id": "add-videos-from-homepage;add-videos-from-recommended;;2"
-    }
-  ],
-  "keyword": "Examples"
-});
-formatter.scenario({
-  "line": 10,
-  "name": "Add videos from Recommended",
-  "description": "",
-  "id": "add-videos-from-homepage;add-videos-from-recommended;;2",
   "type": "scenario",
-  "keyword": "Scenario Outline"
+  "keyword": "Scenario"
 });
 formatter.step({
   "line": 3,
@@ -79,54 +30,56 @@ formatter.step({
 });
 formatter.step({
   "line": 5,
-  "name": "user add 0 and 1 from recommended",
-  "matchedColumns": [
-    0,
-    1
-  ],
+  "name": "user addVideos from recommended",
   "keyword": "Then "
 });
 formatter.step({
   "line": 6,
-  "name": "Verify favorites to My videos",
+  "name": "Navigate to MyVideos page",
+  "keyword": "And "
+});
+formatter.step({
+  "line": 7,
+  "name": "Verify favorites added to My videos",
   "keyword": "Then "
 });
 formatter.match({
   "location": "HomePageStepDef.user_is_already_on_homePage()"
 });
 formatter.result({
-  "duration": 14511288171,
+  "duration": 153930960,
   "status": "passed"
 });
 formatter.match({
   "location": "HomePageStepDef.user_scroll_down_upto_recommended_section()"
 });
 formatter.result({
-  "duration": 108459039,
+  "duration": 100426663,
   "status": "passed"
 });
 formatter.match({
-  "arguments": [
-    {
-      "val": "0",
-      "offset": 9
-    },
-    {
-      "val": "1",
-      "offset": 15
-    }
-  ],
-  "location": "HomePageStepDef.user_add_and_from_recommended(int,int)"
+  "location": "HomePageStepDef.user_add_and_from_recommended()"
 });
 formatter.result({
-  "duration": 865321714,
+  "duration": 1105456012,
   "status": "passed"
 });
 formatter.match({
-  "location": "HomePageStepDef.verify_favorites_to_myvideos()"
+  "location": "HomePageStepDef.Navigate_to_MyVideos_page()"
 });
 formatter.result({
-  "duration": 4245855785,
+  "duration": 4432125328,
+  "status": "passed"
+});
+formatter.match({
+  "location": "HomePageStepDef.Verify_favorites_added_to_My_video()"
+});
+formatter.result({
+  "duration": 144848600,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 211384054,
   "status": "passed"
 });
 });
