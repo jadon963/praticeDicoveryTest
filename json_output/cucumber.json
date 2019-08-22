@@ -1,0 +1,84 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 10,
+        "name": "Add videos from Recommended",
+        "description": "",
+        "id": "add-videos-from-homepage;add-videos-from-recommended;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 12329794153,
+              "status": "passed"
+            },
+            "line": 3,
+            "name": "User is already on homePage",
+            "match": {
+              "location": "HomePageStepDef.user_is_already_on_homePage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 70721433,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "user scroll down upto recommended section",
+            "match": {
+              "location": "HomePageStepDef.user_scroll_down_upto_recommended_section()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 938237934,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user add 0 and 1 from recommended",
+            "match": {
+              "arguments": [
+                {
+                  "val": "0",
+                  "offset": 9
+                },
+                {
+                  "val": "1",
+                  "offset": 15
+                }
+              ],
+              "location": "HomePageStepDef.user_add_and_from_recommended(int,int)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4469097583,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Verify favorites to My videos",
+            "match": {
+              "location": "HomePageStepDef.verify_favorites_to_myvideos()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Add videos from HomePage",
+    "description": "",
+    "id": "add-videos-from-homepage",
+    "keyword": "Feature",
+    "uri": "HomePage.feature"
+  }
+]
